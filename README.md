@@ -1,4 +1,4 @@
-# python
+# Python
 
 ## Develop a solution which simulates the email application in CLI.
 
