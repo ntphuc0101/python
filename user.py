@@ -1,4 +1,3 @@
-import numpy as np
 import json
 from os import path
 
@@ -20,8 +19,6 @@ class user:
         self.username = input("User name: ")
         self.password = input("password: ")
 
-
-
     def getDict(self):
         if path.isfile(userFile):
             with open(userFile) as json_file:
@@ -41,14 +38,12 @@ class user:
                 wrongP = False
 
                 print("you are logging")
-
                 print("***********************************************")
                 break
             else:
                 wrongP = True
 
             tmp = tmp + 1
-
 
     def saveFile(self):
         print("curent dictionary", self.thisdict)

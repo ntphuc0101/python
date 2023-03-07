@@ -1,9 +1,7 @@
-import numpy as np
-import json
-from os import path
 from os import listdir
 from os.path import isfile, join
-import os, subprocess, tempfile
+import os
+
 userFile = "user.json"
 class function():
     def __init__(self,mode):
@@ -12,7 +10,6 @@ class function():
         self.thisdict = {}
         self.mode = mode
         self.folder = None
-
 
     def switch(self):
 
@@ -65,9 +62,7 @@ class function():
         elif self.mode == "edit":
             while(1):
                 self.folder = "draft"
-
                 self.view()
-
                 if filenum == "n":
                     break
                 else:
@@ -93,7 +88,6 @@ class function():
             self.view()
             filenum = input("which file do you want to see(enter index of file)? or n(no): ")
 
-
             if filenum == "n":
                 break
             else:
@@ -106,5 +100,3 @@ class function():
                     print("***************File content********************")
                 else:
                     print("Please enter the index of the file")
-
-
